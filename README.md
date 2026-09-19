@@ -1,30 +1,161 @@
-# Decision-tree-project
+Drug Classification using Decision Trees
+Project Overview  
+This project applies Decision Tree Classification to predict drug types for patients based on medical attributes. It demonstrates end-to-end data preprocessing, model building, and interpretation using Python and scikit-learn. The model is designed to be interpretable, allowing clear extraction of decision rules for each drug class.
 
+----
 
-Project Description: Drug Classification Using Decision Trees
-This project demonstrates the application of Decision Tree Classification to predict suitable drug types for patients based on their medical attributes. The dataset includes features such as sodium-to-potassium ratio (Na/K), blood pressure (BP), age, and cholesterol level.
+Objective  
+To build a classification model that explains how sodium-to-potassium ratio (Na/K), blood pressure (BP), age, and cholesterol level influence drug prescriptions, and to evaluate its accuracy using standard metrics.
 
-The decision tree model was trained to classify patients into five drug categories: Drug A, Drug B, Drug C, Drug X, and Drug Y. By tracing the path from the root node to the leaf nodes, the model generates interpretable rules that define the decision criteria for each drug. For example, patients with 
+----
+
+Dataset  
+The dataset contains patient medical attributes, including:
+
+Sodium-to-potassium ratio (Na/K)
+
+Blood pressure (BP: High, Normal, Low)
+
+Age
+
+Cholesterol level (High/Normal)
+
+Target variable: Drug type (Drug A, Drug B, Drug C, Drug X, Drug Y)
+
+----
+
+Tech Stack
+
+Python (data analysis & modeling)
+
+Pandas & NumPy (data wrangling)
+
+Matplotlib & Seaborn (visualization)
+
+Scikit-learn (decision tree model building & evaluation)
+
+----
+
+Results & Insights  
+The decision tree produced clear, interpretable rules for each drug class:
+
+Drug Y: 
 𝑁
 𝑎
 /
 𝐾
 >
 14.627
- are classified as Drug Y, while those with lower ratios are further split based on BP, age, and cholesterol levels to determine the appropriate drug.
 
-🔹 Key Highlights
-Built a Decision Tree Classifier for medical drug prediction.
+Drug A: 
+𝑁
+𝑎
+/
+𝐾
+≤
+14.627
+,
+𝐵
+𝑃
+=
+𝐻
+𝑖
+𝑔
+ℎ
+,
+𝐴
+𝑔
+𝑒
+≤
+50.5
 
-Extracted decision rules for each drug class, making the model highly interpretable.
+Drug B: 
+𝑁
+𝑎
+/
+𝐾
+≤
+14.627
+,
+𝐵
+𝑃
+=
+𝐻
+𝑖
+𝑔
+ℎ
+,
+𝐴
+𝑔
+𝑒
+>
+50.5
 
-Demonstrated how patient attributes influence drug recommendations.
+Drug C: 
+𝑁
+𝑎
+/
+𝐾
+≤
+14.627
+,
+𝐵
+𝑃
+=
+𝐿
+𝑜
+𝑤
+,
+𝐶
+ℎ
+𝑜
+𝑙
+𝑒
+𝑠
+𝑡
+𝑒
+𝑟
+𝑜
+𝑙
+≤
+𝐻
+𝑖
+𝑔
+ℎ
 
-Provided practice questions and solutions to strengthen understanding of decision tree logic.
+Drug X: 
+𝑁
+𝑎
+/
+𝐾
+≤
+14.627
+,
+𝐵
+𝑃
+=
+𝑁
+𝑜
+𝑟
+𝑚
+𝑎
+𝑙
+,
+𝐶
+ℎ
+𝑜
+𝑙
+𝑒
+𝑠
+𝑡
+𝑒
+𝑟
+𝑜
+𝑙
+=
+𝐻
+𝑖
+𝑔
+ℎ
 
-🔹 Outcomes
-A clear set of decision criteria for each drug class.
-
-A practical example of how machine learning can be applied in healthcare decision-making.
-
-Enhanced interpretability compared to black-box models, making it suitable for educational and clinical insights.
+These rules highlight how patient attributes directly influence drug recommendations. The model’s interpretability makes it suitable for educational purposes and healthcare decision support, as clinicians can trace exactly why a particular drug is suggested.
