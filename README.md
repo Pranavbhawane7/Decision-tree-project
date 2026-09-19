@@ -5,12 +5,12 @@ This project applies Decision Tree Classification to predict drug types for pati
 
 ----
 
-##Objective  
+## Objective  
 To build a classification model that explains how sodium-to-potassium ratio (Na/K), blood pressure (BP), age, and cholesterol level influence drug prescriptions, and to evaluate its accuracy using standard metrics.
 
 ----
 
-##Dataset  
+## Dataset  
 The dataset contains patient medical attributes, including:
 
 Sodium-to-potassium ratio (Na/K)
@@ -25,7 +25,7 @@ Target variable: Drug type (Drug A, Drug B, Drug C, Drug X, Drug Y)
 
 ----
 
-##Tech Stack
+## Tech Stack
 
 Python (data analysis & modeling)
 
@@ -37,7 +37,7 @@ Scikit-learn (decision tree model building & evaluation)
 
 ----
 
-##Results & Insights  
+## Results & Insights  
 The decision tree produced clear, interpretable rules for each drug class:
 
 Drug Y → Na/K > 14.627
