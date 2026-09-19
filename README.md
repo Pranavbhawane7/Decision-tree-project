@@ -1,4 +1,4 @@
-Drug Classification using Decision Trees
+## Drug Classification using Decision Trees
 Project Overview  
 This project applies Decision Tree Classification to predict drug types for patients based on medical attributes. It demonstrates end-to-end data preprocessing, model building, and interpretation using Python and scikit-learn. The model is designed to be interpretable, allowing clear extraction of decision rules for each drug class.
 
@@ -39,123 +39,14 @@ Scikit-learn (decision tree model building & evaluation)
 Results & Insights  
 The decision tree produced clear, interpretable rules for each drug class:
 
-Drug Y: 
-𝑁
-𝑎
-/
-𝐾
->
-14.627
+Drug Y → Na/K > 14.627
 
-Drug A: 
-𝑁
-𝑎
-/
-𝐾
-≤
-14.627
-,
-𝐵
-𝑃
-=
-𝐻
-𝑖
-𝑔
-ℎ
-,
-𝐴
-𝑔
-𝑒
-≤
-50.5
+Drug A → Na/K ≤ 14.627, BP = High, Age ≤ 50.5
 
-Drug B: 
-𝑁
-𝑎
-/
-𝐾
-≤
-14.627
-,
-𝐵
-𝑃
-=
-𝐻
-𝑖
-𝑔
-ℎ
-,
-𝐴
-𝑔
-𝑒
->
-50.5
+Drug B → Na/K ≤ 14.627, BP = High, Age > 50.5
 
-Drug C: 
-𝑁
-𝑎
-/
-𝐾
-≤
-14.627
-,
-𝐵
-𝑃
-=
-𝐿
-𝑜
-𝑤
-,
-𝐶
-ℎ
-𝑜
-𝑙
-𝑒
-𝑠
-𝑡
-𝑒
-𝑟
-𝑜
-𝑙
-≤
-𝐻
-𝑖
-𝑔
-ℎ
+Drug C → Na/K ≤ 14.627, BP = Low, Cholesterol ≤ High
 
-Drug X: 
-𝑁
-𝑎
-/
-𝐾
-≤
-14.627
-,
-𝐵
-𝑃
-=
-𝑁
-𝑜
-𝑟
-𝑚
-𝑎
-𝑙
-,
-𝐶
-ℎ
-𝑜
-𝑙
-𝑒
-𝑠
-𝑡
-𝑒
-𝑟
-𝑜
-𝑙
-=
-𝐻
-𝑖
-𝑔
-ℎ
+Drug X
 
 These rules highlight how patient attributes directly influence drug recommendations. The model’s interpretability makes it suitable for educational purposes and healthcare decision support, as clinicians can trace exactly why a particular drug is suggested.
